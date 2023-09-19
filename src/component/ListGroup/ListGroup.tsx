@@ -1,5 +1,9 @@
 import { useState } from "react";
 
+import styles from "./ListGroup.module.css";
+import styled from "styled-components";
+
+styled.ul``;
 interface Props {
   items: string[];
   heading: string;
@@ -13,7 +17,7 @@ function ListGroup(props: Props) {
   return (
     <>
       <h1>{props.heading}</h1>
-      <ul className="list-group">
+      <ul className={styles["list-group"]}>
         {props.items.map((item, index) => (
           <li
             key={index}
