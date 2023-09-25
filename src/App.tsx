@@ -22,6 +22,7 @@ function App() {
         <Alert onClose={() => setAlertVisibility(true)}>{alertText}</Alert>
       )}
       <ListGroup items={items} heading="Slm" onSelectItem={onSelectItem} /> */}
+
       <Form />
     </div>
   );
